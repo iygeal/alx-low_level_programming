@@ -1,0 +1,1 @@
+Hello and welcome to my first attempt at mastering The C Programming Language. Follow me on this journey. Thank you.
