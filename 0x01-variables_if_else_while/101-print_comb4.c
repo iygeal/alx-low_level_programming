@@ -1,4 +1,4 @@
-#include <stio.h>
+#include <stdio.h>
 /**
  * main - This program makes guided combination of 3 numbers.
  * Return: 0 = success
