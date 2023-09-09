@@ -8,6 +8,7 @@ int main(void)
 	char c;
 
 	for (c = 0; c < 10; c++)
-		printf("%d\n", c);
+		printf("%d", c);
+	printf("\n");
 	return (0);
 }
