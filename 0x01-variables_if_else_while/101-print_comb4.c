@@ -5,11 +5,15 @@
  */
 int main(void)
 {
-	for (int i = 0; i <= 7; i++)
+	int i;
+	int j;
+	int k;
+
+	for (i = 0; i <= 7; i++)
 	{
-		for (int j = i + 1; j <= 8; j++)
+		for (j = i + 1; j <= 8; j++)
 		{
-			for (int k = j + 1; k <= 9; k++)
+			for (k = j + 1; k <= 9; k++)
 			{
 				putchar('0' + i);
 				putchar('0' + j);
