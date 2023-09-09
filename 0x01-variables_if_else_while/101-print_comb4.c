@@ -5,26 +5,26 @@
  */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	int a;
+	int b;
+	int c;
 
-	for (i = 0; i <= 7; i++)
+	for (a = 0; a <= 9; a++)
 	{
-		for (j = i + 1; j <= 8; j++)
+		for (b = a + 1; b <= 9; b++)
 		{
-			for (k = j + 1; k <= 9; k++)
+			for (c = b + 1; c <= 9; c++)
 			{
-				putchar('0' + i);
-				putchar('0' + j);
-				putchar('0' + k);
-				if (!(i == 7 && j == 8 && k == 9))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar(a + '0');
+				putchar(',');
+				putchar(' ');
+				putchar(b + '0');
+				putchar(',');
+				putchar(' ');
+				putchar(c + '0');
+				putchar('\n');
 			}
 		}
 	}
-return (0);
+	return (0);
 }
