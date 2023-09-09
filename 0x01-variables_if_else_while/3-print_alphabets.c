@@ -1,13 +1,15 @@
 #include <stdio.h>
 /**
- * main - This program prints alphabets A-Z and a-z.
-* Return: 0 = Success
-*/
+ *  main - This program prints alphabets A-Z and a-z.
+ *  Return: 0 = Success
+ */
 int main(void)
 {
-	char x = 'a';
-	char y = 'A';
+	char x;
+	char y;
 
+	x = 'a';
+	y = 'A';
 	while
 		(x <= z)
 	{
