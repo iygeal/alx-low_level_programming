@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_array - Function that prints array of integers
  * @a: The array in use.
