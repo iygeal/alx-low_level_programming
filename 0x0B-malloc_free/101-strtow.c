@@ -36,9 +36,9 @@ char **strtow(char *str)
 	for (k = 0; k < length; k++)
 	{
 		words[j][k] = str[i + k];
-		words[j][length] = '\0';
-		i += length + 1;
 	}
+	words[j][length] = '\0';
+	i += length + 1;
 		while (str[i - 1] == ' ')
 		{
 			i++;
@@ -47,4 +47,3 @@ char **strtow(char *str)
 		words[count] = NULL;
 	return (words);
 }
-
