@@ -39,7 +39,7 @@ char **strtow(char *str)
 	}
 	words[j][length] = '\0';
 	i += length + 1;
-		while (str[i - 1] == ' ')
+		while (str[i] == ' ')
 		{
 			i++;
 		}
