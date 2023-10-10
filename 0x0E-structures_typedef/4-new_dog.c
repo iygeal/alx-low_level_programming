@@ -34,7 +34,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		ownerlen++;
 	}
-	dog->owner[ownerlen] = '\0';
 	dog->owner = malloc((ownerlen + 1) * sizeof(char));
 	if (dog->owner == NULL)
 	{
