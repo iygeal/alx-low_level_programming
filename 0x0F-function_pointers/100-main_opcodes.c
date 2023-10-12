@@ -11,18 +11,13 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int hexSize;
 
-	if (argc != 2)
+	if (argc != 2 || atoi(argv[1]) < 0)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-	else if (atoi(argv[1]) < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
-	
-	f = main;
+	f = (int (*)(int, char**)) main;
+
 	while (i < atoi(argv[1]))
 	{
 		hexSize = *(unsigned char *)(f + i);
@@ -34,3 +29,4 @@ int main(int argc, char *argv[])
 	putchar('\n');
 	return (0);
 }
+
