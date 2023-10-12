@@ -1,4 +1,4 @@
-#include "function_pointers.h"
+#include "3-calc.h"
 /**
  * main - Main function to test codes
  * @argc: Argument counter
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-	if ((*op == '/' && num2 == 0) || (*p == '%' && num2 == 0))
+	if ((*op == '/' && num2 == 0) || (*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		return (100);

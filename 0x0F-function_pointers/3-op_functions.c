@@ -1,4 +1,4 @@
-#include "3-cal.h"
+#include "3-calc.h"
 /**
  * op_add - Function that returns sum of integers
  * @a: First integer
