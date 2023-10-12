@@ -11,10 +11,15 @@ int main(int argc, char *argv[])
 	int i = 0;
 	int hexSize;
 
-	if (argc != 2 || atoi(argv[1]) < 0)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
+	}
+	else if (atoi(argv[1]) < 0)
+	{
+		printf("Error\n");
+		exit(2);
 	}
 	f = (int (*)(int, char**)) main;
 
