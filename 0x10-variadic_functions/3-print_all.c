@@ -20,7 +20,6 @@ void print_all(const char * const format, ...)
 			{
 				case 'c':
 					printf("%s%c", separator, va_arg(myFormats, int));
-					separator = ", ";
 					break;
 				case 'i':
 					printf("%s%d", separator, va_arg(myFormats, int));
