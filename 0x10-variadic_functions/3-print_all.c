@@ -12,36 +12,38 @@ void print_all(const char * const format, ...)
 	va_list myFormats;
 
 	va_start(myFormats, format);
-
-	while (format && format[i])
+	if (format)
 	{
-		switch (format[i])
+		while (format[i])
 		{
-			case 'c':
-				printf("%s%c", separator, va_arg(myFormats, int));
-				break;
-			case 'i':
-				printf("%s%d", separator, va_arg(myFormats, int));
-				break;
-			case 'f':
-				printf("%s%f", separator, va_arg(myFormats, double));
-				break;
-			case 's':
-				str = va_arg(myFormats, char *);
-				if (str == NULL)
-					printf("%s(nil)", separator);
-				else
-					printf("%s%s", separator, str);
-				break;
-			default:
-				separator = "";
-				i++;
-				continue;
+			switch (format[i])
+			{
+				case 'c':
+					printf("%s%c", separator, va_arg(myFormats, int));
+					separator = ", ";
+					break;
+				case 'i':
+					printf("%s%d", separator, va_arg(myFormats, int));
+					break;
+				case 'f':
+					printf("%s%f", separator, va_arg(myFormats, double));
+					break;
+				case 's':
+					str = va_arg(myFormats, char *);
+					if (str == NULL)
+						printf("%s(nil)", separator);
+					else
+						printf("%s%s", separator, str);
+					break;
+				default:
+					i++;
+					continue;
+			}
+			separator = ", ";
+			i++;
 		}
-		separator = ", ";
-		i++;
+		va_end(myFormats);
+		printf("\n");
 	}
-	va_end(myFormats);
-	printf("\n");
 
 }
