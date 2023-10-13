@@ -40,8 +40,8 @@ void print_all(const char * const format, ...)
 			separator = ", ";
 			i++;
 		}
-		va_end(myFormats);
 		printf("\n");
+		va_end(myFormats);
 	}
 
 }
