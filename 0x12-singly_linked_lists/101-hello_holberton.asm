@@ -2,7 +2,7 @@ global	main
 extern	printf
 
 section .data
-	format db 'Hello, Holberton\n',0	; Definition of format string
+	format db `Hello, Holberton\n`,0	; Definition of format string
 main:
 	mov	edi, format	; Load the address of the string
 	xor	eax,	eax	; Clear the eax register
