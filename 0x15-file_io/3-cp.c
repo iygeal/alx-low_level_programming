@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	while ((num_read = read(file_from, buffer, sizeof(buffer))) > 0)
 	{
 		num_written = write(file_to, buffer, num_read);
-		if (num_written == -1)
+		if (num_written != num_read)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
