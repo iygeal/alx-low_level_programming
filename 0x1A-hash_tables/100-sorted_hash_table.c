@@ -85,6 +85,13 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0); /* Memory allocation failure */
 	}
+	new_node->value = strdup(value);
+	if (new_node->value == NULL)
+	{
+		free(new_node->key);
+		free(new_node);
+		return (0); /* Memory allocation failure */
+	}
 	/* Insert the new node inside the sorted list */
 	if (insert_into_sorted_list(ht, new_node) == 0)
 	{
