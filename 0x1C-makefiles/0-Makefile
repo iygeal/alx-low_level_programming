@@ -1,0 +1,8 @@
+# Make file for executable named school
+
+# Default rule
+all: school
+
+# Build executable
+school:
+	gcc main.c school.c -o school
