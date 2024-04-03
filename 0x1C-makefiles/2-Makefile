@@ -1,0 +1,25 @@
+# Makefile for school executable
+
+#Compiler
+CC = gcc
+
+# C Source files
+SRC = main.c school.C
+
+# Object files
+# This changes .c files to .o files
+OBJ = $(SRC:.c=.o)
+
+#Executable named
+NAME = school
+
+# Default rule
+# The 'all' rule depends on the executable 'school'
+# It compiles the sources files intoobjec files,
+# then links the object files into executable 'school'
+
+all: $(NAME)
+
+#Build the executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
