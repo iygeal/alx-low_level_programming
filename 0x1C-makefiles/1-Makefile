@@ -8,7 +8,7 @@ all: school
 CC = gcc
 
 # Source files
-SRC = school.c main.CC
+SRC = school.c main.c
 
 # Build the executable
 school: $(SRC)
