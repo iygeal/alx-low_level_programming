@@ -4,7 +4,7 @@
 CC = gcc
 
 # C Source files
-SRC = main.c school.C
+SRC = main.c school.c
 
 # Object files
 # This changes .c files to .o files
