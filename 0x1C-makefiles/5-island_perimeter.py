@@ -24,11 +24,13 @@ def island_perimeter(grid):
                 perimeter += 4
                 # Check if the cell has a land cell above it
                 if i > 0 and grid[i - 1][j] == 1:
-                    # If so, decrement perimeter by 2 (since they share an edge)
+                    # If so, decrement perimeter by 2
+                    # (since they share an edge)
                     perimeter -= 2
                 # Check if the cell has a land cell to its left
                 if j > 0 and grid[i][j - 1] == 1:
-                    # If so, decrement perimeter by 2 (since they share an edge)
+                    # If so, decrement perimeter by 2
+                    # (since they share an edge)
                     perimeter -= 2
     # Return the final perimeter of the island
     return perimeter
