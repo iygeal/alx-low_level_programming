@@ -12,9 +12,9 @@ int interpolation_search(int *array, size_t size, int value);
  */
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t low = 0;
-	size_t high = size - 1;
-	size_t pos;
+	size_t low = 0; /* low is the first index */
+	size_t high = size - 1; /* high is the last index */
+	size_t pos; /* probe position */
 
 	if (array == NULL || size == 0)
 		return (-1);
